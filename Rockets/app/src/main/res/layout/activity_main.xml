@@ -8,9 +8,64 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="211dp"
-        android:layout_height="242dp"
-        app:srcCompat="@mipmap/rocketlogo_foreground"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="244dp" />
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@mipmap/rocketlogo_foreground" />
+
+    <Button
+        style="@style/ListMenuButton"
+        android:id="@+id/button6"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Teams"
+        android:drawableLeft="@drawable/ic_baseline_people_24"
+        android:drawableTint="@color/white"
+        android:paddingLeft="90dp"
+        android:paddingRight="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/button7"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        tools:layout_editor_absoluteX="138dp" />
+
+    <Button
+        style="@style/ListMenuButton"
+        android:id="@+id/button7"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/button8"
+        app:layout_constraintTop_toBottomOf="@+id/button6"
+
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        style="@style/ListMenuButton"
+
+        android:id="@+id/button8"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/button9"
+        app:layout_constraintTop_toBottomOf="@+id/button7"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <Button
+        style="@style/ListMenuButton"
+        android:id="@+id/button9"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/button8"
+        tools:layout_editor_absoluteX="0dp" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
