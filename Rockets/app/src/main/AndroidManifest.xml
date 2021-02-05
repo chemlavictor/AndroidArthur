@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Rockets">
-        <activity android:name=".MainTeam"></activity>
+        <activity
+            android:name=".Players"
+            android:label="@string/title_activity_players"
+            android:theme="@style/Theme.Rockets.NoActionBar"></activity>
+        <activity android:name=".MainTeam" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

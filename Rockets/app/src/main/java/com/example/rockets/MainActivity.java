@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button buttonTeam;
     private Button buttonContactUS;
+    private Button buttonPlayers;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,9 +35,21 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(browserIntent);
             }
         });
+
+        buttonPlayers = (Button) findViewById(R.id.button7);
+        buttonPlayers.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openPlayers();
+            }
+        });
     };
     public void openTeam(){
         Intent intent = new Intent(this, MainTeam.class);
+        startActivity(intent);
+    }
+    public void openPlayers(){
+        Intent intent = new Intent(this, Players.class);
         startActivity(intent);
     }
 
