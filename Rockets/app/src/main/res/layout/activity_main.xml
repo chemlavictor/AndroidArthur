@@ -61,8 +61,10 @@
         android:id="@+id/button9"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-
-        android:text="Button"
+        android:drawableLeft="@drawable/ic_baseline_contact_support_24"
+        android:text="Contact US"
+        android:paddingLeft="90dp"
+        android:paddingRight="100dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/button8"
         tools:layout_editor_absoluteX="0dp" />
